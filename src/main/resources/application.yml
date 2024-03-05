@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ${DATABASE_USER}
+    url: ${DATABASE_URL}
+    password: ${DATABASE_PASSWORD}
+
+  jpa:
+    defer-datasource-initialization: true
+    properties:
+      hibernate:
+        format_sql: 'true'
+
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: 'true'
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+  output:
+    ansi:
+      enabled: always
