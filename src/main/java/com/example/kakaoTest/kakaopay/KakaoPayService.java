@@ -85,7 +85,7 @@ public class KakaoPayService {
     private HttpHeaders getHeaders() {
         HttpHeaders headers = new HttpHeaders();
 
-        String auth = "KakaoAK " + adminKey;        // 띄어쓰기 있음;;
+        String auth = "KakaoAK " + adminKey;
 
         headers.set("Authorization", auth);
         headers.set("Content-type", "application/x-www-form-urlencoded;charset=utf-8");
