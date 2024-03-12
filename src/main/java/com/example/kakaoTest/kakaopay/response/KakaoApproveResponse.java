@@ -1,6 +1,6 @@
 package com.example.kakaoTest.kakaopay.response;
 
-import com.example.kakaoTest.kakaopay.Amount;
+import com.example.kakaoTest.kakaopay.dto.Amount;
 import lombok.Getter;
 import lombok.ToString;
 

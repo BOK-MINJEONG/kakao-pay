@@ -20,15 +20,15 @@ public class BaseResponse<T> {
      * 요청 성공
      */
     public BaseResponse(T result) {
-        this.isSuccess = BaseResponseState.SUCCESS.isSuccess();
-        this.code = BaseResponseState.SUCCESS.getCode();
-        this.message = BaseResponseState.SUCCESS.getMessage();
+        this.isSuccess = BaseResponseStatus.SUCCESS.isSuccess();
+        this.code = BaseResponseStatus.SUCCESS.getCode();
+        this.message = BaseResponseStatus.SUCCESS.getMessage();
     }
 
     /**
      * 요청 실패
      */
-    public BaseResponse(BaseResponseState status) {
+    public BaseResponse(BaseResponseStatus status) {
         this.isSuccess = status.isSuccess();
         this.code = status.getCode();
         this.message = status.getMessage();

@@ -19,3 +19,9 @@ spring:
   output:
     ansi:
       enabled: always
+
+admin:
+  key: ${ADMIN_KEY}
+
+secret:
+  key: ${SECRET_KEY}
